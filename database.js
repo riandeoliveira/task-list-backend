@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const mongoUri = process.env.MONGO_URL || "mongodb://localhost/taskListDB";
+const mongoUri = process.env.MONGODB_URI || "mongodb://localhost/taskListDB";
 
 mongoose
   .connect(mongoUri)
